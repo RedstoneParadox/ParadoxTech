@@ -24,10 +24,23 @@ local casting_machine_recipe = {
   result = "casting-machine"
 }
 
+local air_compressor_recipe = {
+  type = "recipe",
+  category = "crafting",
+  name = "air compressor",
+  enabled = "true",
+  ingredients =
+  {
+    {"iron-plate", 1}
+  },
+  result = "air-compressor"
+}
+
 
 data:extend{
   grinder_recipe,
-  casting_machine_recipe
+  casting_machine_recipe,
+  air_compressor_recipe
 }
 
 -- Grinding recipes
@@ -148,4 +161,28 @@ data:extend{
   cast_iron_sticks,
   cast_copper_plates,
   cast_copper_cable
+}
+
+-- Air Compressing Recipes
+
+local air_compressing_category = {
+  type = "recipe-category",
+  name = "air-compressing"
+}
+
+local compressed_air = {
+  type = "recipe",
+  name = "compressed air",
+  category = "air-compressing",
+  enabled = "true",
+  ingredients = {},
+  results = {
+    {type = "fluid", name = "compressed-air", amount = 500}
+  },
+  result_count = 500
+}
+
+data:extend{
+  air_compressing_category,
+  compressed_air
 }
