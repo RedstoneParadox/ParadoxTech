@@ -24,7 +24,7 @@ local molten_copper = {
 
 local compressed_air = {
     type = "fluid",
-    name = "molten-copper",
+    name = "compressed-air",
     icon = "__ParadoxTech__/graphics/icons/molten_copper.png",
     icon_size = 32,
     default_temperature = 20,
@@ -35,7 +35,7 @@ local compressed_air = {
 
 local hot_air = {
     type = "fluid",
-    name = "molten-copper",
+    name = "hot-air",
     icon = "__ParadoxTech__/graphics/icons/molten_copper.png",
     icon_size = 32,
     default_temperature = 1000,
