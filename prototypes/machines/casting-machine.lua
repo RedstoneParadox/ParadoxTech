@@ -27,7 +27,7 @@ local casting_machine =   {
       height = 160,
       frame_count = 25,
       line_length = 5,
-      scale = 0.5
+      scale = 0.6
     },
     fluid_boxes =
     {

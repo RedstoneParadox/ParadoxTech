@@ -27,7 +27,7 @@ local grinder =   {
       height = 160,
       frame_count = 25,
       line_length = 5,
-      scale = 0.5
+      scale = 0.6
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
