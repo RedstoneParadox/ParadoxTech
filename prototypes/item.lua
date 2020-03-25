@@ -33,6 +33,17 @@ local air_compressor = {
   stack_size = 50
 }
 
+local gas_heater = {
+  type = "item",
+  name = "gas-heater",
+  subgroup = "production-machine",
+  icon = "__ParadoxTech__/graphics/icons/grinder.png",
+  icon_size = 32,
+  order = "g",
+  place_result = "gas-heater",
+  stack_size = 50
+}
+
  local ground_iron = {
   type = "item",
   name = "ground-iron",
@@ -57,6 +68,7 @@ local ground_copper = {
     grinder,
     casting_machine,
     air_compressor,
+    gas_heater,
     ground_iron,
     ground_copper
  }

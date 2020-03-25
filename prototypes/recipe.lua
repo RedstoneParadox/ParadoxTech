@@ -36,11 +36,24 @@ local air_compressor_recipe = {
   result = "air-compressor"
 }
 
+local gas_heater_recipe = {
+  type = "recipe",
+  category = "crafting",
+  name = "gas heater",
+  enabled = "true",
+  ingredients =
+  {
+    {"iron-plate", 1}
+  },
+  result = "gas-heater"
+}
+
 
 data:extend{
   grinder_recipe,
   casting_machine_recipe,
-  air_compressor_recipe
+  air_compressor_recipe,
+  gas_heater_recipe
 }
 
 -- Grinding recipes
@@ -185,4 +198,30 @@ local compressed_air = {
 data:extend{
   air_compressing_category,
   compressed_air
+}
+
+-- Gas Heating Recipes
+
+local gas_heating_category = {
+  type = "recipe-category",
+  name = "gas-heating"
+}
+
+local heat_air = {
+  type = "recipe",
+  name = "heat air",
+  category = "gas-heating",
+  enabled = "true",
+  ingredients = {
+    {type = "fluid", name = "compressed-air", amount = 100}
+  },
+  results = {
+    {type = "fluid", name = "hot-air", amount = 100}
+  },
+  result_count = 500
+}
+
+data:extend{
+  gas_heating_category,
+  heat_air
 }
