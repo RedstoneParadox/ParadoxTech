@@ -61,8 +61,8 @@ local arc_furnace =   {
         pipe_connections = {{ position = {2, -3} }}
       }
     },
-    crafting_categories = {"grinding"},
-    crafting_speed = 0.5,
+    crafting_categories = {"arc-smelting"},
+    crafting_speed = 1.0,
     energy_source =
     {
       type = "electric",

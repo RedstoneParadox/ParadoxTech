@@ -141,7 +141,7 @@ local cast_iron_plates = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 100}
+    {type = "fluid", name = "molten-iron", amount = 150}
   },
   result = "iron-plate",
   result_count = 3
@@ -154,7 +154,7 @@ local cast_iron_gear_wheels = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 100}
+    {type = "fluid", name = "molten-iron", amount = 150}
   },
   result = "iron-gear-wheel",
   result_count = 3
@@ -167,7 +167,7 @@ local cast_iron_sticks = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 100}
+    {type = "fluid", name = "molten-iron", amount = 150}
   },
   result = "iron-stick",
   result_count = 6
@@ -180,7 +180,7 @@ local cast_copper_plates = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 100}
+    {type = "fluid", name = "molten-copper", amount = 150}
   },
   result = "copper-plate",
   result_count = 3
@@ -193,7 +193,7 @@ local cast_copper_cable = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 100}
+    {type = "fluid", name = "molten-copper", amount = 150}
   },
   result = "copper-cable",
   result_count = 6
@@ -256,4 +256,45 @@ local heat_air = {
 data:extend{
   gas_heating_category,
   heat_air
+}
+
+-- Arc Furnace Recipes
+
+local arc_smelting_category = {
+  type = "recipe-category",
+  name = "arc-smelting"
+}
+
+local molten_iron_recipe = {
+  type = "recipe",
+  name = "molten-iron",
+  category = "arc-smelting",
+  enabled = "true",
+  ingredients = {
+    {type = "item", name = "iron-ore", amount = 21}
+  },
+  results = {
+    {type = "fluid", name = "molten-iron", amount = 1050}
+  },
+  energy_required = 5.0
+}
+
+local molten_copper_recipe = {
+  type = "recipe",
+  name = "molten-copper",
+  category = "arc-smelting",
+  enabled = "true",
+  ingredients = {
+    {type = "item", name = "copper-ore", amount = 21}
+  },
+  results = {
+    {type = "fluid", name = "molten-copper", amount = 1050}
+  },
+  energy_required = 5.0
+}
+
+data:extend{
+  arc_smelting_category,
+  molten_iron_recipe,
+  molten_copper_recipe
 }

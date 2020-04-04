@@ -27,29 +27,17 @@ local casting_machine =   {
       height = 192,
       frame_count = 25,
       line_length = 5,
-      scale = 0.32
+      scale = 1
     },
     fluid_boxes =
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = -1,
-        pipe_connections = {{ type="input", position = {0, -2} }},
-        secondary_draw_orders = { north = -1 }
+        pipe_connections = {{ type="input", position = {0, -2} }}
       },
-      {
-        production_type = "output",
-        pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = {{ type="output", position = {0, 2} }},
-        secondary_draw_orders = { north = -1 }
-      },
-      off_when_no_fluid_recipe = true
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
