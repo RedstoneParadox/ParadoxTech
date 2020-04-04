@@ -141,10 +141,11 @@ local cast_iron_plates = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 150}
+    {type = "fluid", name = "molten-iron", amount = 30}
   },
   result = "iron-plate",
-  result_count = 3
+  result_count = 3,
+  energy_required = 1,
 }
 
 local cast_iron_gear_wheels = {
@@ -154,10 +155,11 @@ local cast_iron_gear_wheels = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 150}
+    {type = "fluid", name = "molten-iron", amount = 30}
   },
   result = "iron-gear-wheel",
-  result_count = 3
+  result_count = 3,
+  energy_required = 1,
 }
 
 local cast_iron_sticks = {
@@ -167,23 +169,25 @@ local cast_iron_sticks = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 150}
+    {type = "fluid", name = "molten-iron", amount = 30}
   },
   result = "iron-stick",
-  result_count = 6
+  result_count = 6,
+  energy_required = 1,
 }
 
 local cast_copper_plates = {
   type = "recipe",
-  name = "cast-iron-plates",
+  name = "cast-copper-plates",
   category = "casting",
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 150}
+    {type = "fluid", name = "molten-copper", amount = 30}
   },
   result = "copper-plate",
-  result_count = 3
+  result_count = 3,
+  energy_required = 1,
 }
 
 local cast_copper_cable = {
@@ -193,10 +197,11 @@ local cast_copper_cable = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 150}
+    {type = "fluid", name = "molten-copper", amount = 30}
   },
   result = "copper-cable",
-  result_count = 6
+  result_count = 6,
+  energy_required = 1,
 }
 
 data:extend{
@@ -271,11 +276,11 @@ local molten_iron_recipe = {
   category = "arc-smelting",
   enabled = "true",
   ingredients = {
-    {type = "item", name = "iron-ore", amount = 21}
+    {type = "item", name = "iron-ore", amount = 24}
   },
   results = {
-    {type = "fluid", name = "molten-iron", amount = 1050}
-  },
+    {type = "fluid", name = "molten-iron", amount = 240}
+  },  
   energy_required = 5.0
 }
 
@@ -285,10 +290,10 @@ local molten_copper_recipe = {
   category = "arc-smelting",
   enabled = "true",
   ingredients = {
-    {type = "item", name = "copper-ore", amount = 21}
+    {type = "item", name = "copper-ore", amount = 24}
   },
   results = {
-    {type = "fluid", name = "molten-copper", amount = 1050}
+    {type = "fluid", name = "molten-copper", amount = 240}
   },
   energy_required = 5.0
 }

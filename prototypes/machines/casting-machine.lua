@@ -27,7 +27,7 @@ local casting_machine =   {
       height = 192,
       frame_count = 25,
       line_length = 5,
-      scale = 1
+      scale = 0.8
     },
     fluid_boxes =
     {
@@ -53,7 +53,7 @@ local casting_machine =   {
       apparent_volume = 1.5,
     },
     crafting_categories = {"casting"},
-    crafting_speed = 0.5,
+    crafting_speed = 1,
     energy_source =
     {
       type = "electric",
