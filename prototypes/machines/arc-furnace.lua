@@ -25,7 +25,7 @@ local arc_furnace =   {
       height = 32,
       frame_count = 1,
       line_length = 1,
-      scale = 1
+      scale = 5
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
