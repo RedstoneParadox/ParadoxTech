@@ -64,11 +64,25 @@ local ground_copper = {
   stack_size = 100
 }
 
+local metallurgy_science_pack =   {
+  type = "tool",
+  name = "metallurgy-science-pack",
+  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icon_size = 32,
+  subgroup = "science-pack",
+  order = "h[metallurgy-science-pack]",
+  stack_size = 200,
+  durability = 1,
+  durability_description_key = "description.science-pack-remaining-amount-key",
+  durability_description_value = "description.science-pack-remaining-amount-value"
+}
+
  data:extend{
     grinder,
     casting_machine,
     air_compressor,
     gas_heater,
     ground_iron,
-    ground_copper
+    ground_copper,
+    metallurgy_science_pack
  }

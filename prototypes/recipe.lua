@@ -15,7 +15,7 @@ local grinder_recipe = {
 local casting_machine_recipe = {
   type = "recipe",
   category = "crafting",
-  name = "casting machine",
+  name = "casting-machine",
   enabled = "true",
   ingredients =
   {
@@ -27,7 +27,7 @@ local casting_machine_recipe = {
 local air_compressor_recipe = {
   type = "recipe",
   category = "crafting",
-  name = "air compressor",
+  name = "air-compressor",
   enabled = "true",
   ingredients =
   {
@@ -39,7 +39,7 @@ local air_compressor_recipe = {
 local gas_heater_recipe = {
   type = "recipe",
   category = "crafting",
-  name = "gas heater",
+  name = "gas-heater",
   enabled = "true",
   ingredients =
   {
@@ -48,12 +48,26 @@ local gas_heater_recipe = {
   result = "gas-heater"
 }
 
+local metallurgy_science_pack_recipe =   {
+  type = "recipe",
+  name = "metallurgy-science-pack",
+  energy_required = 12,
+  enabled = "true",
+  ingredients =
+  {
+    {"iron-plate", 2},
+  },
+  result = "metallurgy-science-pack",
+  icon_size = 32,
+}
+
 
 data:extend{
   grinder_recipe,
   casting_machine_recipe,
   air_compressor_recipe,
-  gas_heater_recipe
+  gas_heater_recipe,
+  metallurgy_science_pack_recipe
 }
 
 -- Grinding recipes
@@ -65,7 +79,7 @@ local grinder_category = {
 
 local grind_iron_recipe = {
   type = "recipe",
-  name = "grind iron ore",
+  name = "grind-iron-ore",
   category = "grinding",
   enabled = "true",
   ingredients =
@@ -78,7 +92,7 @@ local grind_iron_recipe = {
 
 local grind_copper_recipe = {
   type = "recipe",
-  name = "grind copper ore",
+  name = "grind-copper-ore",
   category = "grinding",
   enabled = "true",
   ingredients =
@@ -104,7 +118,7 @@ local casting_category = {
 
 local cast_iron_plates = {
   type = "recipe",
-  name = "cast iron plates",
+  name = "cast-iron-plates",
   category = "casting",
   enabled = "true",
   ingredients =
@@ -117,7 +131,7 @@ local cast_iron_plates = {
 
 local cast_iron_gear_wheels = {
   type = "recipe",
-  name = "cast iron gear wheels",
+  name = "cast-iron-gear-wheels",
   category = "casting",
   enabled = "true",
   ingredients =
@@ -130,7 +144,7 @@ local cast_iron_gear_wheels = {
 
 local cast_iron_sticks = {
   type = "recipe",
-  name = "cast iron sticks",
+  name = "cast-iron-sticks",
   category = "casting",
   enabled = "true",
   ingredients =
@@ -143,7 +157,7 @@ local cast_iron_sticks = {
 
 local cast_copper_plates = {
   type = "recipe",
-  name = "cast iron plates",
+  name = "cast-iron-plates",
   category = "casting",
   enabled = "true",
   ingredients =
@@ -156,7 +170,7 @@ local cast_copper_plates = {
 
 local cast_copper_cable = {
   type = "recipe",
-  name = "cast copper cable",
+  name = "cast-copper-cable",
   category = "casting",
   enabled = "true",
   ingredients =
@@ -185,7 +199,7 @@ local air_compressing_category = {
 
 local compressed_air = {
   type = "recipe",
-  name = "compressed air",
+  name = "compressed-air",
   category = "air-compressing",
   enabled = "true",
   ingredients = {},
@@ -209,7 +223,7 @@ local gas_heating_category = {
 
 local heat_air = {
   type = "recipe",
-  name = "heat air",
+  name = "heat-air",
   category = "gas-heating",
   enabled = "true",
   ingredients = {

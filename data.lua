@@ -1,5 +1,6 @@
 --data.lua
 
+require("prototypes.technology")
 require("prototypes.item")
 require("prototypes.fluid")
 require("prototypes.recipe")
