@@ -19,7 +19,9 @@ local casting_machine_recipe = {
   enabled = "true",
   ingredients =
   {
-    {"iron-plate", 1}
+    {"electronic-circuit", 3},
+    {"steel-plate", 5},
+    {"iron-gear-wheel", 5}
   },
   result = "casting-machine"
 }
@@ -55,7 +57,10 @@ local arc_furnace_recipe = {
   enabled = "true",
   ingredients =
   {
-    {"iron-plate", 1}
+    {"stone-brick", 10},
+    {"advanced-circuit", 5},
+    {"pipe", 10},
+    {"steel-plate", 15},
   },
   result = "arc-furnace"
 }
