@@ -83,6 +83,26 @@ local ground_copper = {
   stack_size = 100
 }
 
+local iron_ingot = {
+  type = "item",
+  name = "iron-ingot",
+  subgroup = "raw-material",
+  icon = "__ParadoxTech__/graphics/icons/iron_ingot.png",
+  icon_size = 64,
+  order = "b",
+  stack_size = 100
+}
+
+local copper_ingot = {
+  type = "item",
+  name = "copper-ingot",
+  subgroup = "raw-material",
+  icon = "__ParadoxTech__/graphics/icons/copper_ingot.png",
+  icon_size = 64,
+  order = "b",
+  stack_size = 100
+}
+
 local metallurgy_science_pack =   {
   type = "tool",
   name = "metallurgy-science-pack",
@@ -99,5 +119,7 @@ local metallurgy_science_pack =   {
  data:extend{
     ground_iron,
     ground_copper,
+    iron_ingot,
+    copper_ingot,
     metallurgy_science_pack
  }

@@ -88,6 +88,29 @@ data:extend{
   metallurgy_science_pack_recipe
 }
 
+-- Furnace Recipes
+
+data:extend({
+  {
+    type = "recipe",
+    name = "copper-plate-from-ingot",
+    category = "smelting",
+    energy_required = 3.2,
+    ingredients = {{ "copper-ingot", 2}},
+    result = "copper-plate",
+    result_count = 3
+  },
+  {
+    type = "recipe",
+    name = "iron-plate",
+    category = "smelting",
+    energy_required = 3.2,
+    ingredients = {{"iron-ingot", 2}},
+    result = "iron-plate",
+    result_count = 3
+  }
+})
+
 -- Chemical Recipes
 
 local electrolysis = {
@@ -189,6 +212,20 @@ local cast_iron_plates = {
   energy_required = 1,
 }
 
+local cast_iron_ingots = {
+  type = "recipe",
+  name = "cast-iron-ingots",
+  category = "casting",
+  enabled = "true",
+  ingredients =
+  {
+    {type = "fluid", name = "molten-iron", amount = 30}
+  },
+  result = "iron-ingot",
+  result_count = 3,
+  energy_required = 1,
+}
+
 local cast_iron_gear_wheels = {
   type = "recipe",
   name = "cast-iron-gear-wheels",
@@ -231,6 +268,20 @@ local cast_copper_plates = {
   energy_required = 1,
 }
 
+local cast_copper_ingots = {
+  type = "recipe",
+  name = "cast-copper-ingots",
+  category = "casting",
+  enabled = "true",
+  ingredients =
+  {
+    {type = "fluid", name = "molten-copper", amount = 30}
+  },
+  result = "copper-plate",
+  result_count = 3,
+  energy_required = 1,
+}
+
 local cast_copper_cable = {
   type = "recipe",
   name = "cast-copper-cable",
@@ -248,9 +299,11 @@ local cast_copper_cable = {
 data:extend{
   casting_category,
   cast_iron_plates,
+  cast_iron_ingots,
   cast_iron_gear_wheels,
   cast_iron_sticks,
   cast_copper_plates,
+  cast_copper_ingots,
   cast_copper_cable
 }
 
