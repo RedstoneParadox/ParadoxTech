@@ -3,7 +3,7 @@
 local casting_machine =   {
     type = "assembling-machine",
     name = "casting-machine",
-    icon = "__ParadoxTech__/graphics/icons/grinder.png",
+    icon = "__ParadoxTech__/graphics/icons/casting_machine.png",
     icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "casting-machine"},
@@ -21,13 +21,13 @@ local casting_machine =   {
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-      filename = "__ParadoxTech__/graphics/machines/grinder.png",
+      filename = "__ParadoxTech__/graphics/machines/casting_machine.png",
       priority = "high",
       width = 192,
       height = 192,
-      frame_count = 25,
-      line_length = 5,
-      scale = 0.8
+      frame_count = 1,
+      line_length = 1,
+      scale = 0.5
     },
     fluid_boxes =
     {
