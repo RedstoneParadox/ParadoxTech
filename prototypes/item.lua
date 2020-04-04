@@ -44,6 +44,25 @@ local gas_heater = {
   stack_size = 50
 }
 
+local arc_furnace = {
+  type = "item",
+  name = "arc-furnace",
+  subgroup = "production-machine",
+  icon = "__ParadoxTech__/graphics/icons/grinder.png",
+  icon_size = 32,
+  order = "g",
+  place_result = "arc-furnace",
+  stack_size = 10
+}
+
+data:extend{
+  grinder,
+  casting_machine,
+  air_compressor,
+  gas_heater,
+  arc_furnace
+}
+
  local ground_iron = {
   type = "item",
   name = "ground-iron",
@@ -78,10 +97,6 @@ local metallurgy_science_pack =   {
 }
 
  data:extend{
-    grinder,
-    casting_machine,
-    air_compressor,
-    gas_heater,
     ground_iron,
     ground_copper,
     metallurgy_science_pack

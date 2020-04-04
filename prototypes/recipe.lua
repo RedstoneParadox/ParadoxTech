@@ -48,6 +48,18 @@ local gas_heater_recipe = {
   result = "gas-heater"
 }
 
+local arc_furnace_recipe = {
+  type = "recipe",
+  category = "crafting",
+  name = "arc-furnace",
+  enabled = "true",
+  ingredients =
+  {
+    {"iron-plate", 1}
+  },
+  result = "arc-furnace"
+}
+
 local metallurgy_science_pack_recipe =   {
   type = "recipe",
   name = "metallurgy-science-pack",
@@ -67,6 +79,7 @@ data:extend{
   casting_machine_recipe,
   air_compressor_recipe,
   gas_heater_recipe,
+  arc_furnace_recipe,
   metallurgy_science_pack_recipe
 }
 

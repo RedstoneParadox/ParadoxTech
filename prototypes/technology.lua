@@ -15,6 +15,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "casting-machine"
             },
+            {
+              type = "unlock-recipe",
+              recipe = "arc-furnace"
+          },
         },
         unit = {
           count = 300,
