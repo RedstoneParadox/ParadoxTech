@@ -88,6 +88,29 @@ data:extend{
   metallurgy_science_pack_recipe
 }
 
+-- Chemical Recipes
+
+local electrolysis = {
+  type = "recipe",
+  name = "electrolysis",
+  category = "chemistry",
+  enabled = "true",
+  subgroup = "fluid-recipes",
+  ingredients = {
+    {type = "fluid", name = "water", amount = 100}
+  },
+  results = {
+    {type = "fluid", name = "hydrogen", amount = 100},
+    {type = "fluid", name = "oxygen", amount = 50}
+  },
+  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icon_size = 32
+}
+
+data:extend{
+  electrolysis
+}
+
 -- Grinding recipes
 
 local grinder_category = {

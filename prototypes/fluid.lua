@@ -69,9 +69,41 @@ local hot_air = {
     flow_color = {r = 1, g = 151/255, b = 74/255, a = 0.5}
 }
 
+local oxygen = {
+    type = "fluid",
+    name = "oxygen",
+    icons = {
+        {
+            icon = "__ParadoxTech__/graphics/icons/oxygen.png",
+            icon_size = 120
+        }
+    },
+    default_temperature = 10,
+    max_temperature = 1000,
+    base_color = {r = 1, g = 0, b = 0, a = 1},
+    flow_color = {r = 1, g = 0, b = 0, a = 1}
+}
+
+local hydrogen = {
+    type = "fluid",
+    name = "hydrogen",
+    icons = {
+        {
+            icon = "__ParadoxTech__/graphics/icons/hydrogen.png",
+            icon_size = 120
+        }
+    },
+    default_temperature = 10,
+    max_temperature = 1000,
+    base_color = {r = 1, g = 0, b = 1, a = 1},
+    flow_color = {r = 1, g = 0, b = 1, a = 1}
+}
+
 data:extend{
     molten_iron,
     molten_copper,
     compressed_air,
-    hot_air
+    hot_air,
+    oxygen,
+    hydrogen
 }
