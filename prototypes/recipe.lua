@@ -276,10 +276,10 @@ local molten_iron_recipe = {
   category = "arc-smelting",
   enabled = "true",
   ingredients = {
-    {type = "item", name = "iron-ore", amount = 24}
+    {type = "item", name = "iron-ore", amount = 20}
   },
   results = {
-    {type = "fluid", name = "molten-iron", amount = 240}
+    {type = "fluid", name = "molten-iron", amount = 300}
   },  
   energy_required = 5.0
 }
@@ -290,10 +290,10 @@ local molten_copper_recipe = {
   category = "arc-smelting",
   enabled = "true",
   ingredients = {
-    {type = "item", name = "copper-ore", amount = 24}
+    {type = "item", name = "copper-ore", amount = 20}
   },
   results = {
-    {type = "fluid", name = "molten-copper", amount = 240}
+    {type = "fluid", name = "molten-copper", amount = 300}
   },
   energy_required = 5.0
 }
