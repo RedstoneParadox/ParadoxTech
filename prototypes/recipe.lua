@@ -107,8 +107,26 @@ local electrolysis = {
   icon_size = 32
 }
 
+local pig_iron_purification = {
+  type = "recipe",
+  name = "pig-iron-purification",
+  category = "chemistry",
+  enabled = "true",
+  subgroup = "fluid-recipes",
+  ingredients = {
+    {type = "fluid", name = "molten-pig-iron", amount = 100},
+    {type = "fluid", name = "oxygen", amount = 25}
+  },
+  results = {
+    {type = "fluid", name = "molten-iron", amount = 100}
+  },
+  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icon_size = 32
+}
+
 data:extend{
-  electrolysis
+  electrolysis,
+  pig_iron_purification
 }
 
 -- Grinding recipes
@@ -302,7 +320,7 @@ local molten_iron_recipe = {
     {type = "item", name = "iron-ore", amount = 20}
   },
   results = {
-    {type = "fluid", name = "molten-iron", amount = 300}
+    {type = "fluid", name = "molten-pig-iron", amount = 300}
   },  
   energy_required = 5.0
 }
