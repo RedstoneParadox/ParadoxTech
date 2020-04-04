@@ -23,11 +23,11 @@ local casting_machine =   {
     {
       filename = "__ParadoxTech__/graphics/machines/grinder.png",
       priority = "high",
-      width = 160,
-      height = 160,
+      width = 192,
+      height = 192,
       frame_count = 25,
       line_length = 5,
-      scale = 0.6
+      scale = 0.32
     },
     fluid_boxes =
     {

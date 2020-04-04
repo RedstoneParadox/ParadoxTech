@@ -23,11 +23,11 @@ local grinder =   {
     {
       filename = "__ParadoxTech__/graphics/machines/grinder.png",
       priority = "high",
-      width = 160,
-      height = 160,
+      width = 192,
+      height = 192,
       frame_count = 25,
       line_length = 5,
-      scale = 0.6
+      scale = 1
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
