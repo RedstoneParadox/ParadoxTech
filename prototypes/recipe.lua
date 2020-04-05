@@ -109,18 +109,18 @@ data:extend({
     name = "copper-plate-from-ingot",
     category = "smelting",
     energy_required = 3.2,
-    ingredients = {{ "copper-ingot", 2}},
+    ingredients = {{ "copper-ingot", 4}},
     result = "copper-plate",
-    result_count = 3
+    result_count = 5
   },
   {
     type = "recipe",
     name = "iron-plate",
     category = "smelting",
     energy_required = 3.2,
-    ingredients = {{"iron-ingot", 2}},
+    ingredients = {{"iron-ingot", 4}},
     result = "iron-plate",
-    result_count = 3
+    result_count = 5
   }
 })
 
@@ -218,10 +218,10 @@ local cast_iron_plates = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 30}
+    {type = "fluid", name = "molten-iron", amount = 10}
   },
   result = "iron-plate",
-  result_count = 3,
+  result_count = 1,
   energy_required = 1,
 }
 
@@ -232,10 +232,10 @@ local cast_iron_ingots = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 30}
+    {type = "fluid", name = "molten-iron", amount = 10}
   },
   result = "iron-ingot",
-  result_count = 3,
+  result_count = 1,
   energy_required = 1,
 }
 
@@ -246,10 +246,10 @@ local cast_iron_gear_wheels = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 30}
+    {type = "fluid", name = "molten-iron", amount = 10}
   },
   result = "iron-gear-wheel",
-  result_count = 3,
+  result_count = 1,
   energy_required = 1,
 }
 
@@ -260,10 +260,10 @@ local cast_iron_sticks = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron", amount = 30}
+    {type = "fluid", name = "molten-iron", amount = 10}
   },
   result = "iron-stick",
-  result_count = 6,
+  result_count = 2,
   energy_required = 1,
 }
 
@@ -274,10 +274,10 @@ local cast_copper_plates = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 30}
+    {type = "fluid", name = "molten-copper", amount = 10}
   },
   result = "copper-plate",
-  result_count = 3,
+  result_count = 1,
   energy_required = 1,
 }
 
@@ -288,10 +288,10 @@ local cast_copper_ingots = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 30}
+    {type = "fluid", name = "molten-copper", amount = 10}
   },
   result = "copper-plate",
-  result_count = 3,
+  result_count = 1,
   energy_required = 1,
 }
 
@@ -302,10 +302,10 @@ local cast_copper_cable = {
   enabled = "true",
   ingredients =
   {
-    {type = "fluid", name = "molten-copper", amount = 30}
+    {type = "fluid", name = "molten-copper", amount = 10}
   },
   result = "copper-cable",
-  result_count = 6,
+  result_count = 2,
   energy_required = 1,
 }
 
