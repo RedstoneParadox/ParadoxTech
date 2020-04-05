@@ -25,9 +25,9 @@ local casting_machine =   {
       priority = "high",
       width = 192,
       height = 192,
-      frame_count = 1,
-      line_length = 1,
-      scale = 0.5
+      frame_count = 25,
+      line_length = 5,
+      scale = 0.6
     },
     fluid_boxes =
     {

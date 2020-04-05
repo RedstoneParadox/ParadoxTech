@@ -15,7 +15,7 @@
   type = "item",
   name = "casting-machine",
   subgroup = "production-machine",
-  icon = "__ParadoxTech__/graphics/icons/grinder.png",
+  icon = "__ParadoxTech__/graphics/icons/casting_machine.png",
   icon_size = 32,
   order = "g",
   place_result = "casting-machine",
