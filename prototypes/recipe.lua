@@ -290,7 +290,7 @@ local cast_copper_ingots = {
   {
     {type = "fluid", name = "molten-copper", amount = 10}
   },
-  result = "copper-plate",
+  result = "copper-ingot",
   result_count = 1,
   energy_required = 1,
 }
