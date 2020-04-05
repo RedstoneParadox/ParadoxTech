@@ -1,7 +1,7 @@
 local arc_furnace =   {
     type = "assembling-machine",
     name = "arc-furnace",
-    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon = "__ParadoxTech__/graphics/icons/arc_furnace.png",
     icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "arc-furnace"},
@@ -19,13 +19,15 @@ local arc_furnace =   {
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     animation =
     {
-      filename = "__ParadoxTech__/graphics/icons/missingno.png",
+      filename = "__ParadoxTech__/graphics/machines/arc_furnace.png",
       priority = "high",
-      width = 32,
-      height = 32,
-      frame_count = 1,
-      line_length = 1,
-      scale = 5
+      width = 320,
+      height = 320,
+      frame_count = 50,
+      line_length = 5,
+      scale = 1,
+      animation_speed = 0.4,
+      shift = {0.0, -0.75}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
