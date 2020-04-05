@@ -123,8 +123,8 @@ local electrolysis = {
     {type = "fluid", name = "water", amount = 100}
   },
   results = {
-    {type = "fluid", name = "hydrogen", amount = 100},
-    {type = "fluid", name = "oxygen", amount = 50}
+    {type = "fluid", name = "hydrogen-gas", amount = 100},
+    {type = "fluid", name = "oxygen-gas", amount = 50}
   },
   icon = "__ParadoxTech__/graphics/icons/missingno.png",
   icon_size = 32
@@ -138,7 +138,7 @@ local pig_iron_purification = {
   subgroup = "fluid-recipes",
   ingredients = {
     {type = "fluid", name = "molten-pig-iron", amount = 100},
-    {type = "fluid", name = "oxygen", amount = 25}
+    {type = "fluid", name = "oxygen-gas", amount = 25}
   },
   results = {
     {type = "fluid", name = "molten-iron", amount = 100}

@@ -87,7 +87,7 @@ local hot_air = {
 
 local oxygen = {
     type = "fluid",
-    name = "oxygen",
+    name = "oxygen-gas",
     icons = {
         {
             icon = "__ParadoxTech__/graphics/icons/oxygen.png",
@@ -102,7 +102,7 @@ local oxygen = {
 
 local hydrogen = {
     type = "fluid",
-    name = "hydrogen",
+    name = "hydrogen-gas",
     icons = {
         {
             icon = "__ParadoxTech__/graphics/icons/hydrogen.png",
