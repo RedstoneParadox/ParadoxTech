@@ -1,4 +1,17 @@
--- Recipes
+-- Vanilla Recipe Edits
+
+local oxygen_ingredient = {type="fluid", name="oxygen-gas", amount=10}
+
+local solid_light_oil_fuel = data.raw["recipe"]["solid-fuel-from-light-oil"]
+table.insert(solid_light_oil_fuel.ingredients, oxygen_ingredient)
+
+local solid_heavy_oil_fuel = data.raw["recipe"]["solid-fuel-from-heavy-oil"]
+table.insert(solid_heavy_oil_fuel.ingredients, oxygen_ingredient)
+
+local solid_petro_fuel = data.raw["recipe"]["solid-fuel-from-petroleum-gas"]
+table.insert(solid_petro_fuel.ingredients, oxygen_ingredient)
+
+-- Crafting Recipes
 
 local grinder_recipe = {
   type = "recipe",
