@@ -160,9 +160,27 @@ local pig_iron_purification = {
   icon_size = 32
 }
 
+local molten_copper_purification = {
+  type = "recipe",
+  name = "molten-copper-purification",
+  category = "chemistry",
+  enabled = "true",
+  subgroup = "fluid-recipes",
+  ingredients = {
+    {type = "fluid", name = "molten-impure-copper", amount = 100},
+    {type = "fluid", name = "oxygen-gas", amount = 25}
+  },
+  results = {
+    {type = "fluid", name = "molten-copper", amount = 100}
+  },
+  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icon_size = 32
+}
+
 data:extend{
   electrolysis,
-  pig_iron_purification
+  pig_iron_purification,
+  molten_copper_purification
 }
 
 -- Grinding recipes
@@ -400,7 +418,7 @@ local molten_copper_recipe = {
     {type = "item", name = "copper-ore", amount = 20}
   },
   results = {
-    {type = "fluid", name = "molten-copper", amount = 300}
+    {type = "fluid", name = "molten-impure-copper", amount = 300}
   },
   energy_required = 5.0
 }

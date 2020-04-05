@@ -37,18 +37,33 @@ local molten_pig_iron = {
 local molten_copper = {
     type = "fluid",
     name = "molten-copper",
-    icon = "__ParadoxTech__/graphics/icons/molten_copper.png",
     icons = {
         {
             icon = table.deepcopy(dropletIcon),
-            tint = {r = 1, g = 128/255, b = 0, a = 1},
+            tint = {r = 240/255, g = 100/255, b = 0, a = 1},
             icon_size = 32
         }
     },
     default_temperature = 1538,
     max_temperature = 2862,
-    base_color = {r = 0.402, g = 0.068, b = 0.020, a = 1},
-    flow_color = {r = 0.402, g = 0.068, b = 0.020, a = 1}
+    base_color = {r = 240/255, g = 120/255, b = 0, a = 1},
+    flow_color = {r = 240/255, g = 120/255, b = 0, a = 1}
+}
+
+local molten_impure_copper = {
+    type = "fluid",
+    name = "molten-impure-copper",
+    icons = {
+        {
+            icon = table.deepcopy(dropletIcon),
+            tint = {r = 200/255, g = 80/255, b = 0, a = 1},
+            icon_size = 32
+        }
+    },
+    default_temperature = 1538,
+    max_temperature = 2862,
+    base_color = {r = 200/255, g = 100/255, b = 0, a = 1},
+    flow_color = {r = 200/255, g = 100/255, b = 0, a = 1}
 }
 
 local airIcon = data.raw.fluid["steam"].icon
@@ -119,6 +134,7 @@ data:extend{
     molten_iron,
     molten_pig_iron,
     molten_copper,
+    molten_impure_copper,
     compressed_air,
     hot_air,
     oxygen,
