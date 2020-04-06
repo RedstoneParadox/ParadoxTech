@@ -71,7 +71,7 @@ data:extend({
         name = "electrolysis",
         icon = "__ParadoxTech__/graphics/icons/missingno.png",
         icon_size = 32,
-        prerequisites = {"oil-processing"},
+        prerequisites = {"chemical-science-pack"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -85,7 +85,7 @@ data:extend({
             {"logistic-science-pack", 1},
             {"chemical-science-pack", 1},
           },
-          time = 30
+          time = 20
         },
         order = "c-a"
       },
