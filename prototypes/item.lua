@@ -55,12 +55,24 @@ local arc_furnace = {
   stack_size = 10
 }
 
+local fluid_void = {
+  type = "item",
+  name = "fluid-void",
+  subgroup = "production-machine",
+  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icon_size = 32,
+  order = "g",
+  place_result = "fluid-void",
+  stack_size = 50
+}
+
 data:extend{
   grinder,
   casting_machine,
   air_compressor,
   gas_heater,
-  arc_furnace
+  arc_furnace,
+  fluid_void
 }
 
  local ground_iron = {

@@ -78,6 +78,18 @@ local arc_furnace_recipe = {
   result = "arc-furnace"
 }
 
+local fluid_void_recipe = {
+  type = "recipe",
+  category = "crafting",
+  name = "fluid-void",
+  enabled = "true",
+  ingredients =
+  {
+    {"iron-plate", 1}
+  },
+  result = "fluid-void"
+}
+
 local metallurgy_science_pack_recipe =   {
   type = "recipe",
   name = "metallurgy-science-pack",
@@ -98,6 +110,7 @@ data:extend{
   air_compressor_recipe,
   gas_heater_recipe,
   arc_furnace_recipe,
+  fluid_void_recipe,
   metallurgy_science_pack_recipe
 }
 
@@ -123,6 +136,34 @@ data:extend({
     result_count = 5
   }
 })
+
+-- Voiding Recipes
+
+local void_category = {
+  type = "recipe-category",
+  name = "void"
+}
+
+local void_hydrogen = {
+  type = "recipe",
+  name = "void-hydrogen",
+  category = "void",
+  enabled = "true",
+  subgroup = "fluid-recipes",
+  ingredients = {
+    {type = "fluid", name = "hydrogen-gas", amount = 500},
+  },
+  results = {
+    
+  },
+  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icon_size = 32
+}
+
+data:extend{
+  void_category,
+  void_hydrogen
+}
 
 -- Chemical Recipes
 

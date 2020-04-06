@@ -9,6 +9,7 @@ require("prototypes.machines.casting-machine")
 require("prototypes.machines.air-compressor")
 require("prototypes.machines.gas-heater")
 require("prototypes.machines.arc-furnace")
+require("prototypes.machines.entities")
 
 local lab = data.raw["lab"]["lab"]
 
