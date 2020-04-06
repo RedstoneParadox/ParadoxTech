@@ -170,64 +170,58 @@ data:extend{
 
 -- Chemical Recipes
 
-local electrolysis = {
-  type = "recipe",
-  name = "electrolysis",
-  category = "chemistry",
-  enabled = "false",
-  subgroup = "fluid-recipes",
-  ingredients = {
-    {type = "fluid", name = "water", amount = 100}
-  },
-  results = {
-    {type = "fluid", name = "hydrogen-gas", amount = 100},
-    {type = "fluid", name = "oxygen-gas", amount = 50}
-  },
-  icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32,
-  hide_from_player_crafting = "true",
-}
-
-local pig_iron_purification = {
-  type = "recipe",
-  name = "pig-iron-purification",
-  category = "chemistry",
-  enabled = "true",
-  subgroup = "fluid-recipes",
-  ingredients = {
-    {type = "fluid", name = "molten-pig-iron", amount = 100},
-    {type = "fluid", name = "oxygen-gas", amount = 25}
-  },
-  results = {
-    {type = "fluid", name = "molten-iron", amount = 100}
-  },
-  icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32,
-  hide_from_player_crafting = "true",
-}
-
-local molten_copper_purification = {
-  type = "recipe",
-  name = "molten-copper-purification",
-  category = "chemistry",
-  enabled = "true",
-  subgroup = "fluid-recipes",
-  ingredients = {
-    {type = "fluid", name = "molten-impure-copper", amount = 100},
-    {type = "fluid", name = "oxygen-gas", amount = 25}
-  },
-  results = {
-    {type = "fluid", name = "molten-copper", amount = 100}
-  },
-  icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32,
-  hide_from_player_crafting = "true",
-}
-
 data:extend{
-  electrolysis,
-  pig_iron_purification,
-  molten_copper_purification
+  {
+    type = "recipe",
+    name = "electrolysis",
+    category = "chemistry",
+    enabled = "false",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "water", amount = 100}
+    },
+    results = {
+      {type = "fluid", name = "hydrogen-gas", amount = 100},
+      {type = "fluid", name = "oxygen-gas", amount = 50}
+    },
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
+    name = "pig-iron-purification",
+    category = "chemistry",
+    enabled = "true",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "molten-pig-iron", amount = 100},
+      {type = "fluid", name = "oxygen-gas", amount = 25}
+    },
+    results = {
+      {type = "fluid", name = "molten-iron", amount = 100}
+    },
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
+    name = "molten-copper-purification",
+    category = "chemistry",
+    enabled = "true",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "molten-impure-copper", amount = 100},
+      {type = "fluid", name = "oxygen-gas", amount = 25}
+    },
+    results = {
+      {type = "fluid", name = "molten-copper", amount = 100}
+    },
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    hide_from_player_crafting = "true",
+  }
 }
 
 -- Grinding recipes
