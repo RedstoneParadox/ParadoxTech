@@ -29,7 +29,7 @@ local casting_machine_recipe = {
   type = "recipe",
   category = "crafting",
   name = "casting-machine",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {"electronic-circuit", 3},
@@ -67,7 +67,7 @@ local arc_furnace_recipe = {
   type = "recipe",
   category = "crafting",
   name = "arc-furnace",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {"stone-brick", 10},
@@ -94,7 +94,7 @@ local metallurgy_science_pack_recipe =   {
   type = "recipe",
   name = "metallurgy-science-pack",
   energy_required = 12,
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {"iron-plate", 2},
@@ -124,7 +124,8 @@ data:extend({
     energy_required = 3.2,
     ingredients = {{ "copper-ingot", 4}},
     result = "copper-plate",
-    result_count = 5
+    result_count = 5,
+    hide_from_player_crafting = "true",
   },
   {
     type = "recipe",
@@ -133,7 +134,8 @@ data:extend({
     energy_required = 3.2,
     ingredients = {{"iron-ingot", 4}},
     result = "iron-plate",
-    result_count = 5
+    result_count = 5,
+    hide_from_player_crafting = "true",
   }
 })
 
@@ -157,7 +159,8 @@ local void_hydrogen = {
     
   },
   icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32
+  icon_size = 32,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{
@@ -171,7 +174,7 @@ local electrolysis = {
   type = "recipe",
   name = "electrolysis",
   category = "chemistry",
-  enabled = "true",
+  enabled = "false",
   subgroup = "fluid-recipes",
   ingredients = {
     {type = "fluid", name = "water", amount = 100}
@@ -181,7 +184,8 @@ local electrolysis = {
     {type = "fluid", name = "oxygen-gas", amount = 50}
   },
   icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32
+  icon_size = 32,
+  hide_from_player_crafting = "true",
 }
 
 local pig_iron_purification = {
@@ -198,7 +202,8 @@ local pig_iron_purification = {
     {type = "fluid", name = "molten-iron", amount = 100}
   },
   icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32
+  icon_size = 32,
+  hide_from_player_crafting = "true",
 }
 
 local molten_copper_purification = {
@@ -215,7 +220,8 @@ local molten_copper_purification = {
     {type = "fluid", name = "molten-copper", amount = 100}
   },
   icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32
+  icon_size = 32,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{
@@ -241,7 +247,8 @@ local grind_iron_recipe = {
     {"iron-ore", 2}
   },
   result = "ground-iron",
-  result_count = 3
+  result_count = 3,
+  hide_from_player_crafting = "true",
 }
 
 local grind_copper_recipe = {
@@ -254,7 +261,8 @@ local grind_copper_recipe = {
     {"copper-ore", 2}
   },
   result = "ground-copper",
-  result_count = 3
+  result_count = 3,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{
@@ -282,6 +290,7 @@ local cast_iron_plates = {
   result = "iron-plate",
   result_count = 1,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 local cast_iron_ingots = {
@@ -296,13 +305,14 @@ local cast_iron_ingots = {
   result = "iron-ingot",
   result_count = 1,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 local cast_iron_gear_wheels = {
   type = "recipe",
   name = "cast-iron-gear-wheels",
   category = "casting",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {type = "fluid", name = "molten-iron", amount = 10}
@@ -310,13 +320,14 @@ local cast_iron_gear_wheels = {
   result = "iron-gear-wheel",
   result_count = 1,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 local cast_iron_sticks = {
   type = "recipe",
   name = "cast-iron-sticks",
   category = "casting",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {type = "fluid", name = "molten-iron", amount = 10}
@@ -324,6 +335,7 @@ local cast_iron_sticks = {
   result = "iron-stick",
   result_count = 2,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 local cast_copper_plates = {
@@ -338,6 +350,7 @@ local cast_copper_plates = {
   result = "copper-plate",
   result_count = 1,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 local cast_copper_ingots = {
@@ -352,13 +365,14 @@ local cast_copper_ingots = {
   result = "copper-ingot",
   result_count = 1,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 local cast_copper_cable = {
   type = "recipe",
   name = "cast-copper-cable",
   category = "casting",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {type = "fluid", name = "molten-copper", amount = 10}
@@ -366,6 +380,7 @@ local cast_copper_cable = {
   result = "copper-cable",
   result_count = 2,
   energy_required = 1,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{
@@ -395,7 +410,8 @@ local compressed_air = {
   results = {
     {type = "fluid", name = "compressed-air", amount = 500}
   },
-  result_count = 500
+  result_count = 500,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{
@@ -421,7 +437,8 @@ local heat_air = {
   results = {
     {type = "fluid", name = "hot-air", amount = 100}
   },
-  result_count = 500
+  result_count = 500,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{
@@ -447,7 +464,8 @@ local molten_iron_recipe = {
   results = {
     {type = "fluid", name = "molten-pig-iron", amount = 300}
   },  
-  energy_required = 5.0
+  energy_required = 5.0,
+  hide_from_player_crafting = "true",
 }
 
 local molten_copper_recipe = {
@@ -461,7 +479,8 @@ local molten_copper_recipe = {
   results = {
     {type = "fluid", name = "molten-impure-copper", amount = 300}
   },
-  energy_required = 5.0
+  energy_required = 5.0,
+  hide_from_player_crafting = "true",
 }
 
 data:extend{

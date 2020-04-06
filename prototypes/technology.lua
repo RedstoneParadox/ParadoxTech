@@ -65,4 +65,28 @@ data:extend({
         },
         order = "c-a"
       },
+      --Misc
+      {
+        type = "technology",
+        name = "electrolysis",
+        icon = "__ParadoxTech__/graphics/icons/missingno.png",
+        icon_size = 32,
+        prerequisites = {"oil-processing"},
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "electrolysis"
+            },
+        },
+        unit = {
+          count = 100,
+          ingredients = {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+          },
+          time = 30
+        },
+        order = "c-a"
+      },
 })
