@@ -190,6 +190,25 @@ data:extend{
   },
   {
     type = "recipe",
+    name = "coal-cleaning",
+    category = "chemistry",
+    enabled = "false",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "water", amount = 50},
+      {type = "item", name = "coal", amount = 5},
+    },
+    results = {
+      {type = "item", name = "clean-coal", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 5}
+    },
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    hide_from_player_crafting = "true",
+    main_product = "clean-coal"
+  },
+  {
+    type = "recipe",
     name = "pig-iron-purification",
     category = "chemistry",
     enabled = "true",

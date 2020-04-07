@@ -89,4 +89,27 @@ data:extend({
         },
         order = "c-a"
       },
+      {
+        type = "technology",
+        name = "coal-cleaning",
+        icon = "__ParadoxTech__/graphics/icons/missingno.png",
+        icon_size = 32,
+        prerequisites = {"chemical-science-pack"},
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "coal-cleaning"
+            },
+        },
+        unit = {
+          count = 100,
+          ingredients = {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+          },
+          time = 20
+        },
+        order = "c-a"
+      },
 })
