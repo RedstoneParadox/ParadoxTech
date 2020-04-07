@@ -147,6 +147,8 @@ clean_coal.icons = {
     tint = {r=255,g=255,b=255,a=0}
   }
 }
+clean_coal.fuel_value = "8J"
+clean_coal.emissions_multiplier = 0.5
 
  data:extend{
     ground_iron,
