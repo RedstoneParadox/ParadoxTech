@@ -132,8 +132,11 @@ local clean_coal = table.deepcopy(data.raw["item"]["coal"])
 clean_coal.name = "clean-coal"
 clean_coal.icons = {
   {
+    icon = clean_coal.icon
+  },
+  {
     icon = clean_coal.icon,
-    tint = {r=1,g=1,b=1,a=0.9}
+    tint = {r=255,g=255,b=255,a=0}
   }
 }
 

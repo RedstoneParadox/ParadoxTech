@@ -92,8 +92,8 @@ data:extend({
       {
         type = "technology",
         name = "coal-cleaning",
-        icon = "__ParadoxTech__/graphics/icons/missingno.png",
-        icon_size = 32,
+        icons = data.raw["item"]["clean-coal"].icons,
+        icon_size = 64,
         prerequisites = {"chemical-science-pack"},
         effects = {
             {

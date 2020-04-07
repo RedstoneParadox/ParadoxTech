@@ -202,7 +202,6 @@ data:extend{
       {type = "item", name = "clean-coal", amount = 5},
       {type = "fluid", name = "sulfuric-acid", amount = 5}
     },
-    icon = "__ParadoxTech__/graphics/icons/missingno.png",
     icon_size = 32,
     hide_from_player_crafting = "true",
     main_product = "clean-coal"
