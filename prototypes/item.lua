@@ -105,6 +105,16 @@ local iron_ingot = {
   stack_size = 100
 }
 
+local steel_ingot = {
+  type = "item",
+  name = "steel-ingot",
+  subgroup = "raw-material",
+  icon = "__ParadoxTech__/graphics/icons/steel_ingot.png",
+  icon_size = 64,
+  order = "b",
+  stack_size = 100
+}
+
 local copper_ingot = {
   type = "item",
   name = "copper-ingot",
@@ -154,6 +164,7 @@ clean_coal.emissions_multiplier = 0.5
     ground_iron,
     ground_copper,
     iron_ingot,
+    steel_ingot,
     copper_ingot,
     metallurgy_science_pack,
     clean_coal

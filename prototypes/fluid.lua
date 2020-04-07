@@ -34,6 +34,22 @@ local molten_pig_iron = {
     flow_color = {r = 180/255, g = 75/255, b = 0, a = 1}
 }
 
+local molten_steel = {
+    type = "fluid",
+    name = "molten-steel",
+    icons = {
+        {
+            icon = table.deepcopy(dropletIcon),
+            tint = {r = 220, g = 220, b = 220, a = 255},
+            icon_size = 32
+        }
+    },
+    default_temperature = 1538,
+    max_temperature = 2862,
+    base_color = {r = 169, g = 169, b = 169, a = 255},
+    flow_color = {r = 119, g = 136, b = 143, a = 255}
+}
+
 local molten_copper = {
     type = "fluid",
     name = "molten-copper",
@@ -133,6 +149,7 @@ local hydrogen = {
 data:extend{
     molten_iron,
     molten_pig_iron,
+    molten_steel,
     molten_copper,
     molten_impure_copper,
     compressed_air,

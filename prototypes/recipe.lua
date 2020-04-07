@@ -225,6 +225,23 @@ data:extend{
   },
   {
     type = "recipe",
+    name = "molten-steel",
+    category = "chemistry",
+    enabled = "true",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 100},
+      {type = "fluid", name = "oxygen-gas", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "molten-steel", amount = 60}
+    },
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
     name = "molten-copper-purification",
     category = "chemistry",
     enabled = "true",
@@ -350,6 +367,36 @@ local cast_iron_sticks = {
   hide_from_player_crafting = "true",
 }
 
+local cast_steel_plates = {
+  type = "recipe",
+  name = "cast-steel-plates",
+  category = "casting",
+  enabled = "true",
+  ingredients =
+  {
+    {type = "fluid", name = "molten-steel", amount = 10}
+  },
+  result = "steel-plate",
+  result_count = 1,
+  energy_required = 1,
+  hide_from_player_crafting = "true",
+}
+
+local cast_steel_ingots = {
+  type = "recipe",
+  name = "cast-steel-ingots",
+  category = "casting",
+  enabled = "true",
+  ingredients =
+  {
+    {type = "fluid", name = "molten-steel", amount = 10}
+  },
+  result = "steel-ingot",
+  result_count = 1,
+  energy_required = 1,
+  hide_from_player_crafting = "true",
+}
+
 local cast_copper_plates = {
   type = "recipe",
   name = "cast-copper-plates",
@@ -401,6 +448,8 @@ data:extend{
   cast_iron_ingots,
   cast_iron_gear_wheels,
   cast_iron_sticks,
+  cast_steel_plates,
+  cast_steel_ingots,
   cast_copper_plates,
   cast_copper_ingots,
   cast_copper_cable
