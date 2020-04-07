@@ -3,8 +3,8 @@ data:extend({
     {
         type = "technology",
         name = "metallurgy",
-        icon = "__ParadoxTech__/graphics/icons/missingno.png",
-        icon_size = 32,
+        icon = "__ParadoxTech__/graphics/icons/technology/metallurgy.png",
+        icon_size = 320,
         prerequisites = {"advanced-material-processing-2"},
         effects = {
             {
