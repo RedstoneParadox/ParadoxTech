@@ -128,10 +128,20 @@ local metallurgy_science_pack =   {
   durability_description_value = "description.science-pack-remaining-amount-value"
 }
 
+local clean_coal = table.deepcopy(data.raw["item"]["coal"])
+clean_coal.name = "clean-coal"
+clean_coal.icons = {
+  {
+    icon = clean_coal.icon,
+    tint = {r=1,g=1,b=1,a=0.9}
+  }
+}
+
  data:extend{
     ground_iron,
     ground_copper,
     iron_ingot,
     copper_ingot,
-    metallurgy_science_pack
+    metallurgy_science_pack,
+    clean_coal
  }
