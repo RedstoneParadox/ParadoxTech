@@ -2,7 +2,7 @@ local arc_furnace =   {
     type = "assembling-machine",
     name = "arc-furnace",
     icon = "__ParadoxTech__/graphics/icons/arc_furnace.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "arc-furnace"},
     max_health = 800,
@@ -25,8 +25,8 @@ local arc_furnace =   {
       height = 320,
       frame_count = 50,
       line_length = 5,
-      scale = 1,
-      animation_speed = 0.4,
+      scale = 0.9,
+      animation_speed = 0.33333,
       shift = {0.0, -0.75}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
@@ -35,8 +35,8 @@ local arc_furnace =   {
     {
       sound = {
         {
-          filename = "__base__/sound/electric-mining-drill.ogg",
-          apparent_volume = 1.5
+          filename = "__base__/sound/electric-furnace.ogg",
+          volume = 1.5
         },
       },
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
@@ -46,21 +46,10 @@ local arc_furnace =   {
     {
       {
         production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        base_level = 1,
-        pipe_connections = {{ position = {-2, -3} }}
-      },
-      {
-        production_type = "output",
+        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_level = 1,
         pipe_connections = {{ position = {0, -3} }}
-      },
-      {
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        base_level = 1,
-        pipe_connections = {{ position = {2, -3} }}
       }
     },
     crafting_categories = {"arc-smelting"},
