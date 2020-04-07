@@ -118,7 +118,15 @@ local copper_ingot = {
 local metallurgy_science_pack =   {
   type = "tool",
   name = "metallurgy-science-pack",
-  icon = "__ParadoxTech__/graphics/icons/missingno.png",
+  icons = {
+    {
+      icon = data.raw["tool"]["utility-science-pack"].icon
+    },
+    {
+      icon = data.raw["tool"]["utility-science-pack"].icon,
+      tint = {r=255,g=0,b=0,a=0}
+    }
+  },
   icon_size = 32,
   subgroup = "science-pack",
   order = "h[metallurgy-science-pack]",
