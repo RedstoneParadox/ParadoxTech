@@ -220,8 +220,8 @@ data:extend{
       {type = "fluid", name = "molten-iron", amount = 100},
       {type = "fluid", name = "molten-iron-slag", amount = 20}
     },
-    icon = "__ParadoxTech__/graphics/icons/missingno.png",
-    icon_size = 32,
+    main_product = "molten-iron",
+    icon_size = 64,
     hide_from_player_crafting = "true",
   },
   {
@@ -238,8 +238,8 @@ data:extend{
       {type = "fluid", name = "molten-steel", amount = 60},
       {type = "fluid", name = "molten-iron-slag", amount = 20}
     },
-    icon = "__ParadoxTech__/graphics/icons/missingno.png",
-    icon_size = 32,
+    main_product = "molten-steel",
+    icon_size = 64,
     hide_from_player_crafting = "true",
   },
   {
@@ -256,8 +256,8 @@ data:extend{
       {type = "fluid", name = "molten-copper", amount = 100},
       {type = "fluid", name = "molten-copper-slag", amount = 20}
     },
-    icon = "__ParadoxTech__/graphics/icons/missingno.png",
-    icon_size = 32,
+    main_product = "molten-copper",
+    icon_size = 64,
     hide_from_player_crafting = "true",
   }
 }
