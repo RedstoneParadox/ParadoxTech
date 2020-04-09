@@ -184,8 +184,26 @@ data:extend{
       {type = "fluid", name = "hydrogen-gas", amount = 100},
       {type = "fluid", name = "oxygen-gas", amount = 50}
     },
-    icon = "__ParadoxTech__/graphics/icons/missingno.png",
-    icon_size = 32,
+    icons = {
+      {
+        icon = data.raw["fluid"]["water"].icon,
+        icon_size = 64,
+        scale = 0.01,
+        shift = {0, -0.25}
+      },
+      {
+        icon = data.raw["fluid"]["oxygen-gas"].icon,
+        icon_size = 120,
+        scale = 0.005,
+        shift = {0.25, 0.25}
+      },
+      {
+        icon = data.raw["fluid"]["hydrogen-gas"].icon,
+        icon_size = 120,
+        scale = 0.005,
+        shift = {-0.25, 0.25}
+      },
+    },
     hide_from_player_crafting = "true",
   },
   {

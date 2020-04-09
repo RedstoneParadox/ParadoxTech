@@ -151,12 +151,8 @@ local hot_air = {
 local oxygen = {
     type = "fluid",
     name = "oxygen-gas",
-    icons = {
-        {
-            icon = "__ParadoxTech__/graphics/icons/oxygen.png",
-            icon_size = 120
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/oxygen.png",
+    icon_size = 120,
     default_temperature = 10,
     max_temperature = 1000,
     base_color = {r = 1, g = 0, b = 0, a = 1},
@@ -166,12 +162,8 @@ local oxygen = {
 local hydrogen = {
     type = "fluid",
     name = "hydrogen-gas",
-    icons = {
-        {
-            icon = "__ParadoxTech__/graphics/icons/hydrogen.png",
-            icon_size = 120
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/hydrogen.png",
+    icon_size = 120,
     default_temperature = 10,
     max_temperature = 1000,
     base_color = {r = 1, g = 0, b = 1, a = 1},
