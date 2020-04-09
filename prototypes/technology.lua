@@ -67,6 +67,31 @@ data:extend({
       },
       {
         type = "technology",
+        name = "die-casting-2",
+        icon = "__ParadoxTech__/graphics/icons/missingno.png",
+        icon_size = 32,
+        prerequisites = {"die-casting"},
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "cast-pipe"
+            }
+        },
+        unit = {
+          count = 250,
+          ingredients = {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"metallurgy-science-pack", 1},
+          },
+          time = 15
+        },
+        order = "c-a"
+      },
+      {
+        type = "technology",
         name = "slag-reprocessing",
         icon = "__ParadoxTech__/graphics/icons/missingno.png",
         icon_size = 32,

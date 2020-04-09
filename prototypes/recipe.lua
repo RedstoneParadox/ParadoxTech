@@ -422,6 +422,21 @@ local cast_iron_sticks = {
   hide_from_player_crafting = "true",
 }
 
+local cast_pipe = {
+  type = "recipe",
+  name = "cast-pipe",
+  category = "casting",
+  enabled = "false",
+  ingredients =
+  {
+    {type = "fluid", name = "molten-iron", amount = 10}
+  },
+  result = "pipe",
+  result_count = 1,
+  energy_required = 1,
+  hide_from_player_crafting = "true",
+}
+
 local cast_steel_plates = {
   type = "recipe",
   name = "cast-steel-plates",
@@ -503,6 +518,7 @@ data:extend{
   cast_iron_ingots,
   cast_iron_gear_wheels,
   cast_iron_sticks,
+  cast_pipe,
   cast_steel_plates,
   cast_steel_ingots,
   cast_copper_plates,
