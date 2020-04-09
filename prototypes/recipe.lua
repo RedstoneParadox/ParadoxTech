@@ -217,7 +217,8 @@ data:extend{
       {type = "fluid", name = "oxygen-gas", amount = 25}
     },
     results = {
-      {type = "fluid", name = "molten-iron", amount = 100}
+      {type = "fluid", name = "molten-iron", amount = 100},
+      {type = "fluid", name = "molten-iron-slag", amount = 20}
     },
     icon = "__ParadoxTech__/graphics/icons/missingno.png",
     icon_size = 32,
@@ -234,7 +235,8 @@ data:extend{
       {type = "fluid", name = "oxygen-gas", amount = 50}
     },
     results = {
-      {type = "fluid", name = "molten-steel", amount = 60}
+      {type = "fluid", name = "molten-steel", amount = 60},
+      {type = "fluid", name = "molten-iron-slag", amount = 20}
     },
     icon = "__ParadoxTech__/graphics/icons/missingno.png",
     icon_size = 32,
@@ -251,7 +253,8 @@ data:extend{
       {type = "fluid", name = "oxygen-gas", amount = 25}
     },
     results = {
-      {type = "fluid", name = "molten-copper", amount = 100}
+      {type = "fluid", name = "molten-copper", amount = 100},
+      {type = "fluid", name = "molten-copper-slag", amount = 20}
     },
     icon = "__ParadoxTech__/graphics/icons/missingno.png",
     icon_size = 32,
