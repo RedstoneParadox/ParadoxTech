@@ -137,7 +137,7 @@ local metallurgy_science_pack =   {
       tint = {r=255,g=0,b=0,a=0}
     }
   },
-  icon_size = 32,
+  icon_size = 64,
   subgroup = "science-pack",
   order = "h[metallurgy-science-pack]",
   stack_size = 200,

@@ -9,7 +9,7 @@ local molten_iron = {
         {
             icon = table.deepcopy(dropletIcon),
             tint = {r = 1, g = 64/255, b = 0, a = 1},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 1538,
@@ -25,7 +25,7 @@ local molten_pig_iron = {
         {
             icon = table.deepcopy(dropletIcon),
             tint = {r = 180/255, g = 75/255, b = 0, a = 1},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 1538,
@@ -41,7 +41,7 @@ local molten_steel = {
         {
             icon = table.deepcopy(dropletIcon),
             tint = {r = 220, g = 220, b = 220, a = 255},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 1538,
@@ -57,7 +57,7 @@ local molten_copper = {
         {
             icon = table.deepcopy(dropletIcon),
             tint = {r = 240/255, g = 100/255, b = 0, a = 1},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 1538,
@@ -73,7 +73,7 @@ local molten_impure_copper = {
         {
             icon = table.deepcopy(dropletIcon),
             tint = {r = 200/255, g = 80/255, b = 0, a = 1},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 1538,
@@ -91,7 +91,7 @@ local compressed_air = {
         {
             icon = table.deepcopy(airIcon),
             tint = {r = 0.85, g = 0.85, b = 1, a = 0.5},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 20,
@@ -107,7 +107,7 @@ local hot_air = {
         {
             icon = table.deepcopy(airIcon),
             tint = {r = 1, g = 128/255, b = 0, a = 0.5},
-            icon_size = 32
+            icon_size = 64
         }
     },
     default_temperature = 1000,
