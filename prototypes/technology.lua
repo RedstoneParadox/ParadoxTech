@@ -65,6 +65,35 @@ data:extend({
         },
         order = "c-a"
       },
+      {
+        type = "technology",
+        name = "slag-reprocessing",
+        icon = "__ParadoxTech__/graphics/icons/missingno.png",
+        icon_size = 32,
+        prerequisites = {"metallurgy"},
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "reprocess-iron-slag"
+            },
+            {
+              type = "unlock-recipe",
+              recipe = "reprocess-copper-slag"
+            },
+        },
+        unit = {
+          count = 300,
+          ingredients = {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"metallurgy-science-pack", 1},
+          },
+          time = 30
+        },
+        order = "c-a"
+      },
       --Misc
       {
         type = "technology",

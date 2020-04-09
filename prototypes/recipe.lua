@@ -244,6 +244,23 @@ data:extend{
   },
   {
     type = "recipe",
+    name = "reprocess-iron-slag",
+    category = "chemistry",
+    enabled = "false",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "molten-iron-slag", amount = 20},
+      {type = "fluid", name = "oxygen-gas", amount = 25}
+    },
+    results = {
+      {type = "fluid", name = "molten-iron", amount = 10}
+    },
+    main_product = "molten-iron",
+    icon_size = 64,
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
     name = "molten-steel",
     category = "chemistry",
     enabled = "true",
@@ -277,7 +294,24 @@ data:extend{
     main_product = "molten-copper",
     icon_size = 64,
     hide_from_player_crafting = "true",
-  }
+  },
+  {
+    type = "recipe",
+    name = "reprocess-copper-slag",
+    category = "chemistry",
+    enabled = "false",
+    subgroup = "fluid-recipes",
+    ingredients = {
+      {type = "fluid", name = "molten-copper-slag", amount = 20},
+      {type = "fluid", name = "oxygen-gas", amount = 25}
+    },
+    results = {
+      {type = "fluid", name = "molten-copper", amount = 10}
+    },
+    main_product = "molten-copper",
+    icon_size = 64,
+    hide_from_player_crafting = "true",
+  },
 }
 
 -- Grinding recipes
