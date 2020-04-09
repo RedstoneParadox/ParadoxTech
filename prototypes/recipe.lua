@@ -186,22 +186,27 @@ data:extend{
     },
     icons = {
       {
+        icon = "__core__/graphics/empty.png", -- not sure where exaclty, somewhere in core
+        icon_size = 1,
+        scale = 32,
+      },
+      {
         icon = data.raw["fluid"]["water"].icon,
         icon_size = 64,
-        scale = 0.01,
-        shift = {0, -0.25}
+        scale = 0.25,
+        shift = {0, -8}
       },
       {
         icon = data.raw["fluid"]["oxygen-gas"].icon,
-        icon_size = 120,
-        scale = 0.005,
-        shift = {0.25, 0.25}
+        icon_size = 64,
+        scale = 0.25,
+        shift = {8, 8}
       },
       {
         icon = data.raw["fluid"]["hydrogen-gas"].icon,
-        icon_size = 120,
-        scale = 0.005,
-        shift = {-0.25, 0.25}
+        icon_size = 64,
+        scale = 0.25,
+        shift = {-8, 8}
       },
     },
     hide_from_player_crafting = "true",
