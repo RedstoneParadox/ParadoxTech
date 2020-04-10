@@ -132,11 +132,21 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "iron-plate",
+    name = "iron-plate-from-ingot",
     category = "smelting",
     energy_required = 3.2,
     ingredients = {{"iron-ingot", 4}},
     result = "iron-plate",
+    result_count = 5,
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
+    name = "steel-plate-from-ingot",
+    category = "smelting",
+    energy_required = 3.2,
+    ingredients = {{"steel-ingot", 4}},
+    result = "steel-plate",
     result_count = 5,
     hide_from_player_crafting = "true",
   }
