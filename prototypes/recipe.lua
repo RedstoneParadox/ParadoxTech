@@ -93,13 +93,16 @@ local fluid_void_recipe = {
 local metallurgy_science_pack_recipe =   {
   type = "recipe",
   name = "metallurgy-science-pack",
+  category = "crafting-with-fluid",
   energy_required = 12,
   enabled = "false",
   ingredients =
   {
-    {"iron-plate", 2},
+    {type = "fluid", name = "molten-iron-slag", amount = 5},
+    {type = "item", name = "copper-ingot", amount = 10},
   },
   result = "metallurgy-science-pack",
+  result_count = 3,
   icon_size = 32,
 }
 
