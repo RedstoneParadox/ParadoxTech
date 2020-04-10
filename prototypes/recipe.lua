@@ -98,7 +98,7 @@ local metallurgy_science_pack_recipe =   {
   enabled = "false",
   ingredients =
   {
-    {type = "fluid", name = "molten-iron-slag", amount = 5},
+    {type = "fluid", name = "iron-slag-slurry", amount = 5},
     {type = "item", name = "copper-ingot", amount = 10},
   },
   result = "metallurgy-science-pack",
@@ -254,7 +254,7 @@ data:extend{
     },
     results = {
       {type = "fluid", name = "molten-iron", amount = 100},
-      {type = "fluid", name = "molten-iron-slag", amount = 20}
+      {type = "fluid", name = "iron-slag-slurry", amount = 20}
     },
     energy_required = 1,
     main_product = "molten-iron",
@@ -268,7 +268,7 @@ data:extend{
     enabled = "false",
     subgroup = "fluid-recipes",
     ingredients = {
-      {type = "fluid", name = "molten-iron-slag", amount = 20},
+      {type = "fluid", name = "iron-slag-slurry", amount = 20},
       {type = "fluid", name = "oxygen-gas", amount = 25}
     },
     results = {
@@ -291,7 +291,7 @@ data:extend{
     },
     results = {
       {type = "fluid", name = "molten-steel", amount = 60},
-      {type = "fluid", name = "molten-iron-slag", amount = 20}
+      {type = "fluid", name = "iron-slag-slurry", amount = 20}
     },
     energy_required = 1,
     main_product = "molten-steel",
@@ -310,7 +310,7 @@ data:extend{
     },
     results = {
       {type = "fluid", name = "molten-copper", amount = 100},
-      {type = "fluid", name = "molten-copper-slag", amount = 20}
+      {type = "fluid", name = "copper-slag-slurry", amount = 20}
     },
     energy_required = 1,
     main_product = "molten-copper",
@@ -324,7 +324,7 @@ data:extend{
     enabled = "false",
     subgroup = "fluid-recipes",
     ingredients = {
-      {type = "fluid", name = "molten-copper-slag", amount = 20},
+      {type = "fluid", name = "copper-slag-slurry", amount = 20},
       {type = "fluid", name = "oxygen-gas", amount = 25}
     },
     results = {
