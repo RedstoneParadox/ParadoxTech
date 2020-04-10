@@ -12,5 +12,3 @@ require("prototypes.machines.entities")
 require("prototypes.technology")
 
 local lab = data.raw["lab"]["lab"]
-
-table.insert(lab.inputs, "metallurgy-science-pack")

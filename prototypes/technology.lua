@@ -9,10 +9,6 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "metallurgy-science-pack"
-            },
-            {
-                type = "unlock-recipe",
                 recipe = "casting-machine"
             },
             {
@@ -21,7 +17,7 @@ data:extend({
           },
         },
         unit = {
-          count = 300,
+          count = 500,
           ingredients = {
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
@@ -53,15 +49,14 @@ data:extend({
             },
         },
         unit = {
-          count = 500,
+          count = 300,
           ingredients = {
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
             {"chemical-science-pack", 1},
             {"production-science-pack", 1},
-            {"metallurgy-science-pack", 1},
           },
-          time = 30
+          time = 15
         },
         order = "c-a"
       },
@@ -84,7 +79,6 @@ data:extend({
             {"logistic-science-pack", 1},
             {"chemical-science-pack", 1},
             {"production-science-pack", 1},
-            {"metallurgy-science-pack", 1},
           },
           time = 15
         },
@@ -113,7 +107,6 @@ data:extend({
             {"logistic-science-pack", 1},
             {"chemical-science-pack", 1},
             {"production-science-pack", 1},
-            {"metallurgy-science-pack", 1},
           },
           time = 30
         },

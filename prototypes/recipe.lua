@@ -90,22 +90,6 @@ local fluid_void_recipe = {
   result = "fluid-void"
 }
 
-local metallurgy_science_pack_recipe =   {
-  type = "recipe",
-  name = "metallurgy-science-pack",
-  category = "crafting-with-fluid",
-  energy_required = 12,
-  enabled = "false",
-  ingredients =
-  {
-    {type = "fluid", name = "iron-slag-slurry", amount = 5},
-    {type = "item", name = "copper-ingot", amount = 10},
-  },
-  result = "metallurgy-science-pack",
-  result_count = 3,
-  icon_size = 32,
-}
-
 
 data:extend{
   grinder_recipe,
@@ -113,8 +97,7 @@ data:extend{
   air_compressor_recipe,
   gas_heater_recipe,
   arc_furnace_recipe,
-  fluid_void_recipe,
-  metallurgy_science_pack_recipe
+  fluid_void_recipe
 }
 
 -- Furnace Recipes

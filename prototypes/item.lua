@@ -125,27 +125,6 @@ local copper_ingot = {
   stack_size = 100
 }
 
-local metallurgy_science_pack =   {
-  type = "tool",
-  name = "metallurgy-science-pack",
-  icons = {
-    {
-      icon = data.raw["tool"]["utility-science-pack"].icon
-    },
-    {
-      icon = data.raw["tool"]["utility-science-pack"].icon,
-      tint = {r=255,g=0,b=0,a=0}
-    }
-  },
-  icon_size = 64,
-  subgroup = "science-pack",
-  order = "h[metallurgy-science-pack]",
-  stack_size = 200,
-  durability = 1,
-  durability_description_key = "description.science-pack-remaining-amount-key",
-  durability_description_value = "description.science-pack-remaining-amount-value"
-}
-
 local clean_coal = table.deepcopy(data.raw["item"]["coal"])
 clean_coal.name = "clean-coal"
 clean_coal.icons = {
@@ -166,6 +145,5 @@ clean_coal.emissions_multiplier = 0.5
     iron_ingot,
     steel_ingot,
     copper_ingot,
-    metallurgy_science_pack,
     clean_coal
  }
