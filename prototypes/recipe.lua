@@ -256,6 +256,7 @@ data:extend{
       {type = "fluid", name = "molten-iron", amount = 100},
       {type = "fluid", name = "molten-iron-slag", amount = 20}
     },
+    energy_required = 1,
     main_product = "molten-iron",
     icon_size = 64,
     hide_from_player_crafting = "true",
@@ -273,6 +274,7 @@ data:extend{
     results = {
       {type = "fluid", name = "molten-iron", amount = 10}
     },
+    energy_required = 1,
     main_product = "molten-iron",
     icon_size = 64,
     hide_from_player_crafting = "true",
@@ -291,6 +293,7 @@ data:extend{
       {type = "fluid", name = "molten-steel", amount = 60},
       {type = "fluid", name = "molten-iron-slag", amount = 20}
     },
+    energy_required = 1,
     main_product = "molten-steel",
     icon_size = 64,
     hide_from_player_crafting = "true",
@@ -309,6 +312,7 @@ data:extend{
       {type = "fluid", name = "molten-copper", amount = 100},
       {type = "fluid", name = "molten-copper-slag", amount = 20}
     },
+    energy_required = 1,
     main_product = "molten-copper",
     icon_size = 64,
     hide_from_player_crafting = "true",
@@ -326,6 +330,7 @@ data:extend{
     results = {
       {type = "fluid", name = "molten-copper", amount = 10}
     },
+    energy_required = 1,
     main_product = "molten-copper",
     icon_size = 64,
     hide_from_player_crafting = "true",
@@ -598,43 +603,37 @@ data:extend{
 
 -- Arc Furnace Recipes
 
-local arc_smelting_category = {
-  type = "recipe-category",
-  name = "arc-smelting"
-}
-
-local molten_iron_recipe = {
-  type = "recipe",
-  name = "molten-iron",
-  category = "arc-smelting",
-  enabled = "true",
-  ingredients = {
-    {type = "item", name = "iron-ore", amount = 20}
-  },
-  results = {
-    {type = "fluid", name = "molten-pig-iron", amount = 300}
-  },  
-  energy_required = 5.0,
-  hide_from_player_crafting = "true",
-}
-
-local molten_copper_recipe = {
-  type = "recipe",
-  name = "molten-copper",
-  category = "arc-smelting",
-  enabled = "true",
-  ingredients = {
-    {type = "item", name = "copper-ore", amount = 20}
-  },
-  results = {
-    {type = "fluid", name = "molten-impure-copper", amount = 300}
-  },
-  energy_required = 5.0,
-  hide_from_player_crafting = "true",
-}
-
 data:extend{
-  arc_smelting_category,
-  molten_iron_recipe,
-  molten_copper_recipe
+  {
+    type = "recipe-category",
+    name = "arc-smelting"
+  },
+  {
+    type = "recipe",
+    name = "molten-iron",
+    category = "arc-smelting",
+    enabled = "true",
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 60}
+    },
+    results = {
+      {type = "fluid", name = "molten-pig-iron", amount = 900}
+    },  
+    energy_required = 5.0,
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
+    name = "molten-copper",
+    category = "arc-smelting",
+    enabled = "true",
+    ingredients = {
+      {type = "item", name = "copper-ore", amount = 60}
+    },
+    results = {
+      {type = "fluid", name = "molten-impure-copper", amount = 900}
+    },
+    energy_required = 5.0,
+    hide_from_player_crafting = "true",
+  }
 }
