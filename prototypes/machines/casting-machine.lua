@@ -63,7 +63,7 @@ local casting_machine =   {
     energy_usage = "650kW",
     module_specification =
     {
-      module_slots = 7,
+      module_slots = 2,
       module_info_icon_shift = {0, 0.5},
       module_info_multi_row_initial_height_modifier = -0.3
     },
