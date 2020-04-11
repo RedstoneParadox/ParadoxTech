@@ -33,6 +33,7 @@ local casting_machine =   {
     {
       {
         production_type = "input",
+        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = -1,
