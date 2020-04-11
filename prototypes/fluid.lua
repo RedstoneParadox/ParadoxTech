@@ -16,13 +16,8 @@ local molten_iron = {
 local molten_pig_iron = {
     type = "fluid",
     name = "molten-pig-iron",
-    icons = {
-        {
-            icon = table.deepcopy(dropletIcon),
-            tint = {r = 180/255, g = 75/255, b = 0, a = 1},
-            icon_size = 64
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/fluid/molten_pig_iron.png",
+    icon_size = 64,
     default_temperature = 1538,
     max_temperature = 2862,
     base_color = {r = 180/255, g = 75/255, b = 0, a = 1},
@@ -86,13 +81,8 @@ local copper_slag_slurry = {
 local molten_impure_copper = {
     type = "fluid",
     name = "molten-impure-copper",
-    icons = {
-        {
-            icon = table.deepcopy(dropletIcon),
-            tint = {r = 200/255, g = 80/255, b = 0, a = 1},
-            icon_size = 64
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/fluid/molten_impure_copper.png",
+    icon_size = 64,
     default_temperature = 1538,
     max_temperature = 2862,
     base_color = {r = 200/255, g = 100/255, b = 0, a = 1},
