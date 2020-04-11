@@ -5,13 +5,8 @@ local dropletIcon = data.raw.fluid["crude-oil"].icon
 local molten_iron = {
     type = "fluid",
     name = "molten-iron",
-    icons = {
-        {
-            icon = table.deepcopy(dropletIcon),
-            tint = {r = 1, g = 64/255, b = 0, a = 1},
-            icon_size = 64
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/fluid/molten_iron.png",
+    icon_size = 64,
     default_temperature = 1538,
     max_temperature = 2862,
     base_color = {r = 0.402, g = 0.036, b = 0.021, a = 1},
@@ -53,13 +48,8 @@ local iron_slag_slurry = {
 local molten_steel = {
     type = "fluid",
     name = "molten-steel",
-    icons = {
-        {
-            icon = table.deepcopy(dropletIcon),
-            tint = {r = 220, g = 220, b = 220, a = 255},
-            icon_size = 64
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/fluid/molten_steel.png",
+    icon_size = 64,
     default_temperature = 1538,
     max_temperature = 2862,
     base_color = {r = 169, g = 169, b = 169, a = 255},
@@ -69,13 +59,8 @@ local molten_steel = {
 local molten_copper = {
     type = "fluid",
     name = "molten-copper",
-    icons = {
-        {
-            icon = table.deepcopy(dropletIcon),
-            tint = {r = 240/255, g = 100/255, b = 0, a = 1},
-            icon_size = 64
-        }
-    },
+    icon = "__ParadoxTech__/graphics/icons/fluid/molten_copper.png",
+    icon_size = 64,
     default_temperature = 1538,
     max_temperature = 2862,
     base_color = {r = 240/255, g = 120/255, b = 0, a = 1},
