@@ -71,57 +71,62 @@ data:extend{
     order = "g",
     place_result = "nano-precision-fabricator",
     stack_size = 50
+  },
+  --Other Items
+  {
+    type = "item",
+    name = "ground-iron",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/ground_iron_ore.png",
+    icon_size = 32,
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "ground-copper",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/ground_copper_ore.png",
+    icon_size = 32,
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "iron-ingot",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/iron_ingot.png",
+    icon_size = 64,
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "steel-ingot",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/steel_ingot.png",
+    icon_size = 64,
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "copper-ingot",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/copper_ingot.png",
+    icon_size = 64,
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "raw-carbon",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    order = "b",
+    stack_size = 100
   }
-}
-
- local ground_iron = {
-  type = "item",
-  name = "ground-iron",
-  subgroup = "raw-material",
-  icon = "__ParadoxTech__/graphics/icons/ground_iron_ore.png",
-  icon_size = 32,
-  order = "b",
-  stack_size = 100
-}
-
-local ground_copper = {
-  type = "item",
-  name = "ground-copper",
-  subgroup = "raw-material",
-  icon = "__ParadoxTech__/graphics/icons/ground_copper_ore.png",
-  icon_size = 32,
-  order = "b",
-  stack_size = 100
-}
-
-local iron_ingot = {
-  type = "item",
-  name = "iron-ingot",
-  subgroup = "raw-material",
-  icon = "__ParadoxTech__/graphics/icons/iron_ingot.png",
-  icon_size = 64,
-  order = "b",
-  stack_size = 100
-}
-
-local steel_ingot = {
-  type = "item",
-  name = "steel-ingot",
-  subgroup = "raw-material",
-  icon = "__ParadoxTech__/graphics/icons/steel_ingot.png",
-  icon_size = 64,
-  order = "b",
-  stack_size = 100
-}
-
-local copper_ingot = {
-  type = "item",
-  name = "copper-ingot",
-  subgroup = "raw-material",
-  icon = "__ParadoxTech__/graphics/icons/copper_ingot.png",
-  icon_size = 64,
-  order = "b",
-  stack_size = 100
 }
 
 local clean_coal = table.deepcopy(data.raw["item"]["coal"])
@@ -139,10 +144,5 @@ clean_coal.fuel_value = "8J"
 clean_coal.emissions_multiplier = 0.5
 
  data:extend{
-    ground_iron,
-    ground_copper,
-    iron_ingot,
-    steel_ingot,
-    copper_ingot,
     clean_coal
  }

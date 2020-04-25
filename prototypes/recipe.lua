@@ -210,6 +210,20 @@ data:extend{
   },
   {
     type = "recipe",
+    name = "raw-carbon-extraction",
+    category = "chemistry",
+    enabled = "true",
+    ingredients = {
+      {type = "item", name = "coal", amount = 5},
+    },
+    results = {
+      {type = "item", name = "raw-carbon", amount = 5},
+    },
+    main_product = "raw-carbon",
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
     name = "coal-cleaning",
     category = "chemistry",
     enabled = "false",
