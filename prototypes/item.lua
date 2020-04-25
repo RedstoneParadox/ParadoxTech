@@ -126,6 +126,24 @@ data:extend{
     icon_size = 32,
     order = "b",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "carbon-nanotube",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "graphene",
+    subgroup = "raw-material",
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    order = "b",
+    stack_size = 100
   }
 }
 

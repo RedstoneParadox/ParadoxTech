@@ -553,6 +553,33 @@ data:extend{
   {
     type = "recipe-category",
     name = "nano-fabrication"
+  },
+  {
+    type = "recipe",
+    name = "carbon-nanotubes",
+    category = "nano-fabrication",
+    enabled = "true",
+    ingredients = {
+      {type = "item", name = "raw-carbon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "carbon-nanotube", amount = 10}
+    },
+    hide_from_player_crafting = "true",
+  },
+  {
+    type = "recipe",
+    name = "graphene",
+    category = "nano-fabrication",
+    enabled = "true",
+    ingredients = {
+      {type = "item", name = "carbon-nanotube", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "graphene", amount = 2}
+    },
+    hide_from_player_crafting = "true",
   }
 }
 
