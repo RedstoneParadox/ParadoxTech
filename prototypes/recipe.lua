@@ -13,91 +13,92 @@ table.insert(solid_petro_fuel.ingredients, oxygen_ingredient)
 
 -- Crafting Recipes
 
-local grinder_recipe = {
-  type = "recipe",
-  category = "crafting",
-  name = "grinder",
-  enabled = "false",
-  ingredients =
-  {
-    {"iron-plate", 1}
-  },
-  result = "grinder"
-}
-
-local casting_machine_recipe = {
-  type = "recipe",
-  category = "crafting",
-  name = "casting-machine",
-  enabled = "false",
-  ingredients =
-  {
-    {"electronic-circuit", 3},
-    {"steel-plate", 5},
-    {"iron-gear-wheel", 5}
-  },
-  result = "casting-machine"
-}
-
-local air_compressor_recipe = {
-  type = "recipe",
-  category = "crafting",
-  name = "air-compressor",
-  enabled = "false",
-  ingredients =
-  {
-    {"iron-plate", 1}
-  },
-  result = "air-compressor"
-}
-
-local gas_heater_recipe = {
-  type = "recipe",
-  category = "crafting",
-  name = "gas-heater",
-  enabled = "false",
-  ingredients =
-  {
-    {"iron-plate", 1}
-  },
-  result = "gas-heater"
-}
-
-local arc_furnace_recipe = {
-  type = "recipe",
-  category = "crafting",
-  name = "arc-furnace",
-  enabled = "false",
-  ingredients =
-  {
-    {"stone-brick", 10},
-    {"advanced-circuit", 5},
-    {"pipe", 10},
-    {"steel-plate", 15},
-  },
-  result = "arc-furnace"
-}
-
-local fluid_void_recipe = {
-  type = "recipe",
-  category = "crafting",
-  name = "fluid-void",
-  enabled = "true",
-  ingredients =
-  {
-    {"iron-plate", 1}
-  },
-  result = "fluid-void"
-}
-
-
 data:extend{
-  grinder_recipe,
-  casting_machine_recipe,
-  air_compressor_recipe,
-  gas_heater_recipe,
-  arc_furnace_recipe,
-  fluid_void_recipe
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "grinder",
+    enabled = "false",
+    ingredients =
+    {
+      {"iron-plate", 1}
+    },
+    result = "grinder"
+  },
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "casting-machine",
+    enabled = "false",
+    ingredients =
+    {
+      {"electronic-circuit", 3},
+      {"steel-plate", 5},
+      {"iron-gear-wheel", 5}
+    },
+    result = "casting-machine"
+  },
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "air-compressor",
+    enabled = "false",
+    ingredients =
+    {
+      {"iron-plate", 1}
+    },
+    result = "air-compressor"
+  },
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "gas-heater",
+    enabled = "false",
+    ingredients =
+    {
+      {"iron-plate", 1}
+    },
+    result = "gas-heater"
+  },
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "arc-furnace",
+    enabled = "false",
+    ingredients =
+    {
+      {"stone-brick", 10},
+      {"advanced-circuit", 5},
+      {"pipe", 10},
+      {"steel-plate", 15},
+    },
+    result = "arc-furnace"
+  },
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "fluid-void",
+    enabled = "true",
+    ingredients =
+    {
+      {"iron-plate", 1}
+    },
+    result = "fluid-void"
+  },
+  {
+    type = "recipe",
+    category = "crafting",
+    name = "nano-precision-fabricator",
+    enabled = "true",
+    ingredients =
+    {
+      {"processing-unit", 1},
+      {"plastic-bar", 10},
+      {"steel-plate", 5},
+      {"iron-gear-wheel", 5}
+    },
+    result = "nano-precision-fabricator"
+  },
 }
 
 -- Furnace Recipes
@@ -530,6 +531,15 @@ data:extend{
   cast_copper_plates,
   cast_copper_ingots,
   cast_copper_cable
+}
+
+-- Nano Fabrication Recipes
+
+data:extend{
+  {
+    type = "recipe-category",
+    name = "nano-fabrication"
+  }
 }
 
 -- Air Compressing Recipes

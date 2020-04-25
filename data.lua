@@ -8,6 +8,7 @@ require("prototypes.machines.casting-machine")
 require("prototypes.machines.air-compressor")
 require("prototypes.machines.gas-heater")
 require("prototypes.machines.arc-furnace")
+require("prototypes.machines.nano-precision-fabricator")
 require("prototypes.machines.entities")
 require("prototypes.technology")
 

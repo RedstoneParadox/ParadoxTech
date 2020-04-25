@@ -1,78 +1,77 @@
 --item.lua
 
- local grinder = {
-   type = "item",
-   name = "grinder",
-   subgroup = "production-machine",
-   icon = "__ParadoxTech__/graphics/icons/grinder.png",
-   icon_size = 32,
-   order = "g",
-   place_result = "grinder",
-   stack_size = 50
- }
-
- local casting_machine = {
-  type = "item",
-  name = "casting-machine",
-  subgroup = "production-machine",
-  icon = "__ParadoxTech__/graphics/icons/casting_machine.png",
-  icon_size = 32,
-  order = "g",
-  place_result = "casting-machine",
-  stack_size = 50
-}
-
-local air_compressor = {
-  type = "item",
-  name = "air-compressor",
-  subgroup = "production-machine",
-  icon = "__ParadoxTech__/graphics/icons/grinder.png",
-  icon_size = 32,
-  order = "g",
-  place_result = "air-compressor",
-  stack_size = 50
-}
-
-local gas_heater = {
-  type = "item",
-  name = "gas-heater",
-  subgroup = "production-machine",
-  icon = "__ParadoxTech__/graphics/icons/grinder.png",
-  icon_size = 32,
-  order = "g",
-  place_result = "gas-heater",
-  stack_size = 50
-}
-
-local arc_furnace = {
-  type = "item",
-  name = "arc-furnace",
-  subgroup = "production-machine",
-  icon = "__ParadoxTech__/graphics/icons/arc_furnace.png",
-  icon_size = 64,
-  order = "g",
-  place_result = "arc-furnace",
-  stack_size = 10
-}
-
-local fluid_void = {
-  type = "item",
-  name = "fluid-void",
-  subgroup = "production-machine",
-  icon = "__ParadoxTech__/graphics/icons/missingno.png",
-  icon_size = 32,
-  order = "g",
-  place_result = "fluid-void",
-  stack_size = 50
-}
-
 data:extend{
-  grinder,
-  casting_machine,
-  air_compressor,
-  gas_heater,
-  arc_furnace,
-  fluid_void
+  -- Machine Items
+  {
+    type = "item",
+    name = "grinder",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/grinder.png",
+    icon_size = 32,
+    order = "g",
+    place_result = "grinder",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "casting-machine",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/casting_machine.png",
+    icon_size = 32,
+    order = "g",
+    place_result = "casting-machine",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "air-compressor",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/grinder.png",
+    icon_size = 32,
+    order = "g",
+    place_result = "air-compressor",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "gas-heater",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/grinder.png",
+    icon_size = 32,
+    order = "g",
+    place_result = "gas-heater",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "arc-furnace",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/arc_furnace.png",
+    icon_size = 64,
+    order = "g",
+    place_result = "arc-furnace",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "fluid-void",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    order = "g",
+    place_result = "fluid-void",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "nano-precision-fabricator",
+    subgroup = "production-machine",
+    icon = "__ParadoxTech__/graphics/icons/missingno.png",
+    icon_size = 32,
+    order = "g",
+    place_result = "nano-precision-fabricator",
+    stack_size = 50
+  }
 }
 
  local ground_iron = {
