@@ -129,7 +129,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "iron-plate",
+    name = "iron-plate-from-ingot",
     category = "smelting",
     energy_required = 3.2,
     ingredients = {{"iron-ingot", 4}},
