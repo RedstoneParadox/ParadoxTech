@@ -17,7 +17,7 @@ local grinder_recipe = {
   type = "recipe",
   category = "crafting",
   name = "grinder",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {"iron-plate", 1}
@@ -43,7 +43,7 @@ local air_compressor_recipe = {
   type = "recipe",
   category = "crafting",
   name = "air-compressor",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {"iron-plate", 1}
@@ -55,7 +55,7 @@ local gas_heater_recipe = {
   type = "recipe",
   category = "crafting",
   name = "gas-heater",
-  enabled = "true",
+  enabled = "false",
   ingredients =
   {
     {"iron-plate", 1}
